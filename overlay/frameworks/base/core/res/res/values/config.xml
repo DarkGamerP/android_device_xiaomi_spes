@@ -518,7 +518,7 @@
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
-    <bool name="config_dozePulsePickup">true</bool>
+    <bool name="config_dozePulsePickup">false</bool>
 
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>

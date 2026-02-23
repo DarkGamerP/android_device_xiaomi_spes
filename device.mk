@@ -252,8 +252,8 @@ PRODUCT_PACKAGES += \
     com.fingerprints.extension@1.0.vendor
 
 # FM
-PRODUCT_PACKAGES += \
-    FM2
+# PRODUCT_PACKAGES += \
+#     FM2
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -274,8 +274,8 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # Hotword Enrollment
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-google-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-hotword.xml
+# PRODUCT_COPY_FILES += \
+#     $(LOCAL_PATH)/configs/permissions/privapp-permissions-google-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-hotword.xml
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -299,8 +299,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
 # Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+# PRODUCT_PACKAGES += \
+#     android.hardware.light-service.xiaomi
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -320,9 +320,7 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc
+    libOmxQcelp13Enc 
 
 PRODUCT_PACKAGES += \
     libstagefrighthw \
@@ -338,9 +336,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
 
 # Mlipay
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.mlipay@1.1.vendor \
-    vendor.xiaomi.hardware.mtdservice@1.2.vendor
+# PRODUCT_PACKAGES += \
+#     vendor.xiaomi.hardware.mlipay@1.1.vendor \
+#     vendor.xiaomi.hardware.mtdservice@1.2.vendor
 
 # Network
 PRODUCT_PACKAGES += \

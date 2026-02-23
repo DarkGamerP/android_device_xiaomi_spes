@@ -17,6 +17,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit GApps if available
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
+#microg
+$(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
+
 # Product Specifics
 PRODUCT_NAME := lineage_spes
 PRODUCT_DEVICE := spes
@@ -34,3 +37,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Fingerprint
 BUILD_FINGERPRINT := "Redmi/spes/spes:13/TKQ1.221114.001/V14.0.5.0.TGCINXM:user/release-keys"
+
+# Custom ROM Signing Keys
+PRODUCT_DEFAULT_DEV_CERTIFICATE := keys/releasekey
+PRODUCT_OTA_PUBLIC_KEYS := keys/releasekey
+
+# Maintainer Name
+CRDROID_MAINTAINER := DarkGamerP

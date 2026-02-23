@@ -463,10 +463,10 @@ OMX_GetHandle(OMX_OUT OMX_HANDLETYPE*     handle,
         bool isVppEnabled = false;
         bool isCSEnabled = false;
 #ifndef VIDC_STUB_HAL
-        isCSEnabled = isConfigStoreEnabled();
-        if (isCSEnabled) {
-          getConfigStoreBool("vpp", "enable", &isVppEnabled, false);
-        }
+        // isCSEnabled = isConfigStoreEnabled();
+        // if (isCSEnabled) {
+        //   getConfigStoreBool("vpp", "enable", &isVppEnabled, false);
+        // }
 #endif
         if (!isCSEnabled) {
           char value[PROPERTY_VALUE_MAX];
